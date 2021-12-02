@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar class="background-color-blue">
+  </ion-toolbar>
+  <ion-toolbar class="background-color-white">
+    <ion-title class="bienvenida"> “Bienvenido Jason Fuentes”</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form class="formulario">
+    <br>
+    <br>
+      <ion-row>
+      <ion-col>
+        <br>
+        <div class="codigo">
+        <ion-icon class="qr" name="qr-code-outline"></ion-icon>
+        </div>
+        <br>
+        <br>
+        <ion-button size="default" routerLink="/bienvenido"  expand="block" class="boton1">presente!</ion-button>
+        <br>
+        <ion-button size="default" routerLink="/bienvenido"  expand="block" class="boton1">Mi asitencia</ion-button>
+        <br>
+        <ion-button (click)="lista()"  size="default" routerLink="/bienvenido"  expand="block" class="boton1">Lista del curso</ion-button>
+        <br>
+        <ion-button routerLink="/login" type="submit" color="danger" expand="block" class="boton2">Salir</ion-button>
+        <br>
+
+        
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar class="background-color-blue">
+  </ion-toolbar>

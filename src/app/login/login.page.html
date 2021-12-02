@@ -1,0 +1,43 @@
+
+<ion-header>
+  <ion-toolbar class="background-color-blue">
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<div class="logodiv">
+  <div class="subdivimg">
+    <br>
+    <br>
+    <img src="../../assets/img/logo.png"  alt="logo">
+  </div>
+</div>  
+<ion-content class="ion-padding ion-text-center">
+  
+
+  <br>
+  <br>
+  <br>
+  <form [formGroup]="formularioLogin">
+    <ion-item lines="none">
+      <ion-input placeholder="Ingrese correo" formControlName="correo"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-input placeholder="Ingrese contraseña" type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button  expand="block" type="submit "(click)="logeo()" class="btn-ing">Ingresar</ion-button>
+    <br>
+    
+    <ion-button  color="danger" expand="block" class="boton2">Salir</ion-button>
+    
+    
+  </form>
+  <br>
+  <a href="registro">Regístrate</a> 
+  <br>
+  <div class="logo background-color-blue">
+    <img src="../../assets/img/acreditacion.jpg" alt="logo">
+
+  </div>
+
+</ion-content>

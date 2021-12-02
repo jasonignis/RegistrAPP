@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="background-color-blue">
+  </ion-toolbar>
+  <ion-toolbar class="background-color-white">
+    <ion-title class="bienvenida">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<br>
+<ion-content>
+  <form [formGroup]="formularioRegistro" (ngSubmit)="validarCampos()" >
+    <ion-item>
+      <ion-input placeholder="Ingrese Correo" formControlName="correo" ></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input placeholder="Ingrese Contraseña" formControlName="password" ></ion-input>
+    </ion-item> 
+    <br>
+    <ion-button class="boton1"  expand="block" type="submit ">Registrar</ion-button>
+    <br>
+    <ion-button routerLink="/login"  color="danger" expand="block" class="boton2">Volver</ion-button>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="background-color-blue">
+</ion-toolbar>
